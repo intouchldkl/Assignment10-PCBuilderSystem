@@ -33,8 +33,25 @@ namespace Assignment10_PCBuilderSystem
             }
             else
             {
-                return null
+                return null;
             }
+            
+        }
+        public double CalculateBill()
+        {
+            double total = 0;
+            for(int i = 0;i < items.Length;i++)
+            {
+                if(items[i] != null)
+                {
+                    double price = items[i].getPrice();
+                    int quantity = items[i].getQuantity();
+                    double finalPrice = price * quantity;
+                    total = total + finalPrice;
+                }
+              
+            }
+            return total;
         }
     }
 }
