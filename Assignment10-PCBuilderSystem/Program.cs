@@ -13,7 +13,7 @@ namespace Assignment10_PCBuilderSystem
 
             Console.WriteLine(myOrder.CalculateBill());
 
-
+           
         }
 
         static void FillShop(Item[] shopItems)
